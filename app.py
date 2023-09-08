@@ -22,7 +22,7 @@ def main():
         pil_image = Image.open(uploaded_image)
         rotated_image, stats = align_and_process_image(np.array(pil_image))
 
-        if rotated_image and stats:
+        if (rotated_image is not None) and (stats is not None):
 
             # Display the original and rotated images
             st.image([pil_image, rotated_image], caption=["Original Image", "Rotated Image"], use_column_width=True)

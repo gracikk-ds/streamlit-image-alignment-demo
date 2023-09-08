@@ -39,7 +39,7 @@ You can run the Streamlit Image Alignment Demo using Docker for easy setup and e
 2. Clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/gracikk/streamlit-image-alignment-demo.git
+git clone https://github.com/gracikk-ds/streamlit-image-alignment-demo.git
 cd streamlit-image-alignment-demo
 ```
 
