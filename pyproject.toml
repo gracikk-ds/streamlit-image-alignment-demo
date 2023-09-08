@@ -1,0 +1,29 @@
+[tool.black]
+line-length = 120
+target-version = ['py310']
+
+[tool.mypy]
+files = 'hd-service/**/*.py'
+python_version = '3.10'
+disable_error_code = ['override', 'call-arg']
+ignore_missing_imports = true
+check_untyped_defs = true
+
+[tool.pylint.design]
+max-args = 6
+
+[tool.pylint.format]
+max-line-length = 120
+good-names = ["i", "p", "fc", "fp", "fn", "x", "X", "y", "bn", "ax", "q", "k", "v", "m", "pe", "T", "B", "C", "H", "W", "N", "u", "r", "g", "b"]
+
+[tool.pylint.typecheck]
+generated-members = 'numpy.* , torch.* , cv2.* , ffmpeg.*, av.*'
+
+[tool.pylint.message_control]
+disable = [
+    'too-few-public-methods',
+    'unspecified-encoding',
+]
+
+[tool.usort.known]
+first_aprty = ['hd-service']

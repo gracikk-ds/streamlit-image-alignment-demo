@@ -1,0 +1,13 @@
+[flake8]
+max-line-length = 120
+max-complexity = 25
+exclude = .tox,*.egg,build,temp
+format = pylint
+# see: https://www.flake8rules.com/
+ignore = E203,F401,E402,F403,W503,W504
+# E203: Whitespace before ':'
+# F401: module imported but unused
+# E402: module level import not at top of file
+# F403: ‘from module import *’ used; unable to detect undefined names
+# W503: Line break occurred before a binary operator
+# W504: line break after binary operator
